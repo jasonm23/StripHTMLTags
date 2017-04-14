@@ -1,0 +1,57 @@
+{
+  "name": "StripHtmlTagsES6",
+  "version": "0.0.2",
+  "description": "Strip HTML Tags from UTF8 text",
+  "main": "./index.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "repository": "https://github.com/jasonm23/StripHtmlTagsES6/.git",
+  "keywords": [
+    "es6",
+    "library",
+    "html",
+    "text",
+    "striptags",
+    "strip",
+    "tags"
+  ],
+  "author": "Jason Milkins (https://github.com/jasonm23)",
+  "license": "MIT",
+  "homepage": "https://github.com/jasonm23/StripHtmlTagsES6",
+  "bugs": {"url": "https://github.com/jasonm23/StripHtmlTagsES6/issues"},
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "lib",
+    "dist"
+  ],
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-core": "^6.4.0",
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-preset-es2015": "^6.3.13",
+    "clean-webpack-plugin": "^0.1.8",
+    "del": "^2.2.0",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^4.0.0",
+    "eslint-loader": "^1.2.0",
+    "eslint-plugin-react": "^3.16.1",
+    "eslint-plugin-standard": "^1.3.1",
+    "jest": "^19.0.2",
+    "object-assign": "^4.0.1",
+    "webpack": "^1.12.11",
+    "webpack-node-externals": "^0.4.1"
+  },
+  "library": {
+    "name": "Library",
+    "entry": "StripHtmlTagsES6.js",
+    "dist-node": "StripHtmlTagsES6.js",
+    "dist-web": "StripHtmlTagsES6.web.js",
+    "bundle-node": true
+  }
+}
