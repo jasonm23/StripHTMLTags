@@ -18,5 +18,11 @@ describe('StripTags', () => {
       let expected = 'Hello there';
       expect(stripHTMLTags(html)).toEqual(expected);
     });
+
+    it('Should remove style tags and their content', () => {
+      let html = '<style> body { color: white; }</style><p>Hello there</p>';
+      let expected = 'Hello there';
+      expect(stripHTMLTags(html)).toEqual(expected);
+    });
   });
 });
