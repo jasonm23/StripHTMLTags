@@ -24,5 +24,17 @@ describe('StripTags', () => {
       let expected = 'Hello there';
       expect(stripHTMLTags(html)).toEqual(expected);
     });
+
+    it('should remove <head> tags and all their content', () => {
+      let html = '<html><head><!-- comment --><title>Page Title</title><script>functon(){}</script><style>body {color: black;}</style></head><body><p>Hello there</p></body></html>';
+      let expected = 'Hello there';
+      expect(stripHTMLTags(html)).toEqual(expected);
+    });
+
+    it('should not remove content that has a less than < or greater than in text >', () => {
+      let html = '<p>This is simple <em>HTML</em> with <strong>text that has < and ></strong> <span class="styled with classes">tags</span></p>';
+      let expected = 'This is simple HTML with text that has < and > tags';
+      expect(stripHTMLTags(html)).toEqual(expected);
+    });
   });
 });

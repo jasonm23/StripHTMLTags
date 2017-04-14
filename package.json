@@ -20,7 +20,9 @@
   "author": "Jason Milkins (https://github.com/jasonm23)",
   "license": "MIT",
   "homepage": "https://github.com/jasonm23/StripHtmlTagsES6",
-  "bugs": {"url": "https://github.com/jasonm23/StripHtmlTagsES6/issues"},
+  "bugs": {
+    "url": "https://github.com/jasonm23/StripHtmlTagsES6/issues"
+  },
   "files": [
     "LICENSE",
     "README.md",
@@ -35,6 +37,7 @@
     "babel-loader": "^6.2.1",
     "babel-plugin-add-module-exports": "^0.1.2",
     "babel-preset-es2015": "^6.3.13",
+    "cheerio": "^0.22.0",
     "clean-webpack-plugin": "^0.1.8",
     "del": "^2.2.0",
     "eslint": "^1.10.3",
