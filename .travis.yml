@@ -3,3 +3,7 @@ node_js:
   - 7
 script:
   - yarn test
+cache:
+  yarn: true
+  directories:
+    - node_modules
